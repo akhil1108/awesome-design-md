@@ -223,6 +223,26 @@ Each site includes:
 1. Copy a site's `DESIGN.md` into your project root
 2. Tell your AI agent to use it.
 
+### Claude Code Skills
+
+This repo is also a Claude Code plugin with three skills, so your agent can find, apply and maintain DESIGN.md files on its own:
+
+| Skill | What it does |
+|-------|-------------|
+| [`design-md`](skills/design-md/SKILL.md) | Picks a design from the collection (by brand or mood), installs it as `DESIGN.md`, and builds UI that follows its tokens and rules |
+| [`create-design-md`](skills/create-design-md/SKILL.md) | Writes a new DESIGN.md for a website or codebase from measured CSS values, using the collection's format |
+| [`audit-design-md`](skills/audit-design-md/SKILL.md) | Checks UI code against a DESIGN.md and reports or fixes off-palette colours, stray font sizes, radii, shadows and rule violations |
+
+Install:
+
+```
+/plugin install awesome-design-md --marketplace akhil1108/awesome-design-md
+```
+
+Or add the marketplace first with `/plugin marketplace add akhil1108/awesome-design-md`, then `/plugin install awesome-design-md@awesome-design-md`. Then ask something like *"build a pricing page that looks like Linear"*.
+
+The skills' design index ([`skills/design-md/catalog.md`](skills/design-md/catalog.md)) is generated from this README and `design-md/`. After adding or renaming a design, run `python3 scripts/build-skill-catalog.py`.
+
 
 ## Contributing
 

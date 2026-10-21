@@ -1,0 +1,12 @@
+{
+  "name": "awesome-design-md",
+  "description": "Skills for building UI from 80+ curated DESIGN.md design systems, writing new DESIGN.md files, and auditing UI against one.",
+  "version": "0.1.0",
+  "author": {
+    "name": "VoltAgent"
+  },
+  "homepage": "https://getdesign.md",
+  "repository": "https://github.com/VoltAgent/awesome-design-md",
+  "license": "MIT",
+  "keywords": ["design-system", "design-md", "ui", "frontend"]
+}
